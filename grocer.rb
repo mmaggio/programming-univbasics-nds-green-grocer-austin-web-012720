@@ -4,7 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   
     if !collection.include
-      
+      matching_hash = !!nil
+    else
       index = 0
       while index < collection.length do
     
@@ -12,8 +13,6 @@ def find_item_by_name_in_collection(name, collection)
         if match_check == name
           matching_hash = collection[index]
         end
-    else
-      matching_hash = !!nil
     end
     matching_hash
 end
