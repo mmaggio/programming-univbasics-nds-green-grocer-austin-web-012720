@@ -2,6 +2,12 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
+  index = 0
+  while index < collection.length do
+    If name == collection[index][:name]
+      matching_hash = collection[index]
+    end
+    matching_hash
 end
 
 def consolidate_cart(cart)
