@@ -4,8 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   index = 0
   while index < collection.length do
-    match_check = 
-    If name == collection[index][:name]
+    match_check = collection[index][:name]
+    If name == match_check
       matching_hash = collection[index]
     end
     matching_hash
