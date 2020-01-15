@@ -7,6 +7,7 @@ def find_item_by_name_in_collection(name, collection)
     match_check = collection[index][:name]
     If name == match_check
       matching_hash = collection[index]
+      break
     end
     matching_hash
 end
