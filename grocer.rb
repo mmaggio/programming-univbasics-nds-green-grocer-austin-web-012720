@@ -2,16 +2,19 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
-  index = 0
-  while index < collection.length do
+  
     if collection.include
+      matching_item = 
       
+      index = 0
+      while index < collection.length do
     
-    
-    match_check = collection[index][:item]
-    if name == match_check
-      matching_hash = collection[index]
-      break
+        match_check = collection[index][:item]
+        if match_check == name
+          matching_hash = collection[index]
+        end
+    else
+      matching_hash = !!nil
     end
     matching_hash
 end
