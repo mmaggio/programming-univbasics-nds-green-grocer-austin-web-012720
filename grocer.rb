@@ -3,7 +3,8 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   
-    if collection.include
+    if !collection.include
+      
       index = 0
       while index < collection.length do
     
