@@ -27,7 +27,7 @@ def consolidate_cart(cart)
     new_hash[count] = 0
       inner_index = 0
       while inner_index < cart.length
-        new_hash[:count] += 1 if new_hash[:item] == cart[:item][inner_index]
+        new_hash[count] += 1 if new_hash[:item] == cart[:item][inner_index]
         inner_index += 1
       end
       new_array.push(new_hash)
