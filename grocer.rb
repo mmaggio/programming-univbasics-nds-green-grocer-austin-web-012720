@@ -3,13 +3,14 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   new_hash = {}
-    if collection.include?
-      new_hash[:item] = name
-      matching_hash = new_hash
-    else
-      matching_hash = !!nil
+    
+    index = 0
+    while index < collection.length
+      test = collection[index][:item]
+      matching_hash = collection[index] if name = test
+      index += 1
     end
-    matching_hash
+   matching_hash
 end
 
 def consolidate_cart(cart)
