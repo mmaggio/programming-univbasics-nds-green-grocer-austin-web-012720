@@ -5,15 +5,9 @@ def find_item_by_name_in_collection(name, collection)
   new_hash = {}
     if collection.include
       new_hash[:item] = name
-      matching_hash = !!nil
+      matching_hash = new_hash
     else
-      index = 0
-      while index < collection.length do
-    
-        match_check = collection[index][:item]
-        if match_check == name
-          matching_hash = collection[index]
-        end
+      matching_hash = !!nil
     end
     matching_hash
 end
