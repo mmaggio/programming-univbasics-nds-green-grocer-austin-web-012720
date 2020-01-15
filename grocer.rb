@@ -4,8 +4,6 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   
     if collection.include
-      matching_item = 
-      
       index = 0
       while index < collection.length do
     
